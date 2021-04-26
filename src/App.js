@@ -4,14 +4,14 @@ import Category from './Category';
 
 function App() {
   return (
-    <main className="App">
+    <section className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <aside>
         <Category></Category>
       </aside>
-    </main>
+    </section>
   );
 }
 

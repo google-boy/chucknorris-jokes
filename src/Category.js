@@ -1,9 +1,8 @@
 function Category(){
     return (
-        <div>
+        <nav>
             <h2>Jokes Categories</h2>
-            <nav></nav>
-        </div>
+        </nav>
     );
 }
 
