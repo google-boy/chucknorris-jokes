@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Category from './Category';
+import CategoryList from './Category';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <aside>
-        <Category />
+        <CategoryList />
       </aside>
     </section>
   );
