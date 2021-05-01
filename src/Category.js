@@ -48,11 +48,11 @@ class CategoryList extends React.Component {
             )
         }
         else if (!isLoaded) {
-            return <p>Loading, please wait</p>
+            return <p>Loading... please wait</p>
         } 
         else {
             return (
-                <ul>
+                <ul className="App-list">
                     {items.map((item, index) => 
                         <li key={index} ><CategoryItem value={item} /></li>
                     )}
