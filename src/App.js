@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import CategoryList from './Category';
+import RandomQuote from './RandomQuote';
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
           <h2>Joke categories</h2>
           <CategoryList />
         </aside>
-        <article>Content shown here</article>
+        <article>
+          <h3>Quote</h3>
+          <RandomQuote />
+        </article>
       </div>
     </section>
   );

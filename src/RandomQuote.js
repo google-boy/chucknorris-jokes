@@ -11,3 +11,5 @@ class RandomQuote extends React.Component {
         )
     }
 }
+
+export default RandomQuote
