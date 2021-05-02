@@ -40,11 +40,15 @@
   justify-content: flex-start;
 }
 aside {
+  background-color: #282c34;
   width: auto;
 }
 .App-list {
   list-style-type: none;
+  padding-left: 0;
 }
 .App-list li {
   display: block;
+  padding: 3px 0;
+  background-color: darkgray;
 }
