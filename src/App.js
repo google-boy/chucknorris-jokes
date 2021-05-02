@@ -15,7 +15,7 @@ function App() {
         </aside>
         <article>
           <h3>Quote</h3>
-          <RandomQuote value="" />
+          <RandomQuote value="" id="content"/>
         </article>
       </div>
     </section>

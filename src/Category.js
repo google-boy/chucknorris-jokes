@@ -1,13 +1,19 @@
 import React from 'react'
+
 class CategoryItem extends React.Component {
     constructor(props){
         super(props)
         this.props = props
+        this.showQuote = this.showQuote.bind(this)
+    }
+    showQuote() {
+        
+        console.log(`${this.props.value} clicked`)
     }
     render(){
         const item = this.props.value
         return(
-            item
+            <li><a href="#content" onClick={this.showQuote}>{item}</a></li>
         );
     }
 }
@@ -64,7 +70,7 @@ class CategoryList extends React.Component {
                     <h2>Joke Categories</h2>
                     <ul className="App-list">
                         {items.map((item, index) => 
-                            <li key={index} ><CategoryItem value={item} /></li>
+                            <CategoryItem key={index} value={item} />
                         )}
                     
                     </ul>
