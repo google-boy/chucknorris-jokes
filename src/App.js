@@ -11,12 +11,11 @@ function App() {
       </header>
       <div className="App-content">
         <aside>
-          <h2>Joke categories</h2>
           <CategoryList />
         </aside>
         <article>
           <h3>Quote</h3>
-          <RandomQuote />
+          <RandomQuote value="" />
         </article>
       </div>
     </section>

@@ -44,20 +44,31 @@ class CategoryList extends React.Component {
         const { isLoaded, error, items } = this.state;
         if (error) {
             return (
-                <p>Error: {error.message}</p>
+              <div>
+                  <h2>Joke Categories</h2>
+                  <p>Error: {error.message} </p>
+              </div> 
             )
         }
         else if (!isLoaded) {
-            return <p>Loading... please wait</p>
+            return (
+                <div>
+                    <h2>Joke Categories</h2>
+                    <p>Loading... please wait</p>
+                </div>
+            )
         } 
         else {
             return (
-                <ul className="App-list">
-                    {items.map((item, index) => 
-                        <li key={index} ><CategoryItem value={item} /></li>
-                    )}
-                
-                </ul>
+                <div>
+                    <h2>Joke Categories</h2>
+                    <ul className="App-list">
+                        {items.map((item, index) => 
+                            <li key={index} ><CategoryItem value={item} /></li>
+                        )}
+                    
+                    </ul>
+                </div>
             )
         }
     }
